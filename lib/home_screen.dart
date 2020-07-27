@@ -7,11 +7,14 @@ import 'package:line_icons/line_icons.dart';
 
 class HomeScreen extends StatefulWidget {
   static const String id = 'home_screen';
+  final Function logout;
+  HomeScreen(this.logout);
   @override
   _HomeScreenState createState() => _HomeScreenState();
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  
   int _selectedIndex = 0;
   @override
   Widget build(BuildContext context) {

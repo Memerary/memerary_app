@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import './authentication.dart';
-import './home.dart';
+import './home_screen.dart';
 
 void main() => runApp(MyApp());
 
-class MyApp extends StatefulWidget {
+class MyApp extends StatefulWidget { 
   @override
   State<StatefulWidget> createState() {
     return _MyAppState();
@@ -32,6 +32,6 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext hehe) {
     return MaterialApp(
         home: _loggedIn == 0 ? Authentication(_login)
-         : Home(_logout));
+         : HomeScreen(_logout));
   }
 }
