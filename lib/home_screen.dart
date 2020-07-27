@@ -14,7 +14,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  
+
   int _selectedIndex = 0;
   @override
   Widget build(BuildContext context) {
@@ -50,7 +50,11 @@ class _HomeScreenState extends State<HomeScreen> {
         padding: EdgeInsets.symmetric(vertical: 25.0),
         child: Column(
           children: <Widget>[
-
+             Center(
+        child: RaisedButton(
+            child: Text("Hehe Logout karna hai toh karo yaar"),
+            onPressed: widget.logout),
+      ),
           ],
         ),
       ),
